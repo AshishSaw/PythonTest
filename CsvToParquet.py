@@ -6,8 +6,10 @@ def connect_azure_blob(storage_account_name, blob_storage, storage_account_key, 
     folder_name = folder_name,
     file_type = file_type
 
-    file_location = "wasbs://" + container_name + "@" + storage_account_name + ".blob.core.windows.net/" + folder_name
+    file_location = "wasbs://" + str(container_name) + "@" + str(storage_account_name) + ".blob.core.windows.net/" + str(folder_name)
 
-    tempDir = "wasbs://" + container_name + "@" + storage_account_name + ".blob.core.windows.net/tempDir"
+    tempDir = "wasbs://" + str(container_name) + "@" + str(storage_account_name) + ".blob.core.windows.net/tempDir"
     #spark.conf.set("fs.azure.account.key." + storage_account_name + ".blob.core.windows.net", storage_account_key)
     #dbutils.fs.ls(file_location)
+    print(file_location)
+    print(tempDir)
