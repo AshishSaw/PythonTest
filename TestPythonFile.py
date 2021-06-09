@@ -9,6 +9,10 @@ def printnum(num):
         num = num + 1
 
 
+def addnewnum(a,b,c):
+    output = a + b + c
+    print(output)
+
 
 
 
