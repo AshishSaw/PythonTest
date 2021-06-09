@@ -5,7 +5,7 @@ def printnum(num):
 
 
 
-def add_num(num1, num2):
+def addnum(num1, num2):
     output = num1 + num2
     print(output)
 
