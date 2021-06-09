@@ -15,5 +15,7 @@ def addnewnum(a,b,c):
 
 
 
-
+def subtraction(a,b):
+    data = a -b
+    return data
 
