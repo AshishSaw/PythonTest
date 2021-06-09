@@ -1,5 +1,4 @@
 
-
 def connect_azure_blob(storage_account_name, blob_storage, storage_account_key, container_name, folder_name, file_type, input):
 
 
